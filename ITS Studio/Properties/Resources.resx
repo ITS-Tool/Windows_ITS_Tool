@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdditionalFeatureTitle_EN" xml:space="preserve">
+    <value>Additional feature</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="clicknrun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\clicknrun.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe_PDF_Document_icon16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Adobe-PDF-Document-icon16_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\connect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yes_CN" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="LoadingTPLFailure_CN" xml:space="preserve">
+    <value>讀取TPL失敗!</value>
+  </data>
+  <data name="usb_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\usb-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProcessingTip_Cn" xml:space="preserve">
+    <value>處理中，請稍候...</value>
+  </data>
+  <data name="HoverCircle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\HoverCircle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="No_CN" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="ProcessingTip_En" xml:space="preserve">
+    <value>Processing, please wait...</value>
+  </data>
+  <data name="Actions_list_add_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Actions-list-add-icon 32-32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LH1_Play_icon64_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\LH1-Play-icon64-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green_ok_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\green-ok-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_no_connection_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\signal\icons8-no-connection-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Small_arrow_left_fast_rewind_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Small-arrow-left-fast-rewind-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProfileErr_EN" xml:space="preserve">
+    <value>Profile Version is not mapped!!</value>
+  </data>
+  <data name="ITS_Tool_Legal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\ITS_Tool_Legal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PasswordTip_En" xml:space="preserve">
+    <value>The password you entered: {0}</value>
+  </data>
+  <data name="CRCDiff_EN" xml:space="preserve">
+    <value>CRC are differts between the device and the hex file</value>
+  </data>
+  <data name="Pencil_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Pencil-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documents_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Documents-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Warning-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Password_Cn" xml:space="preserve">
+    <value>請輸入密碼：</value>
+  </data>
+  <data name="icons8_strong_signal_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\signal\icons8-strong-signal-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_Copy_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Document-Copy-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadingTPLFailure_EN" xml:space="preserve">
+    <value>Loading TPL was failure!</value>
+  </data>
+  <data name="Sure_CH" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="Small_arrow_right_fast_forward_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Small-arrow-right-fast-forward-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panel_64_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\panel_64-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BridgePic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\BridgePic1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_low_connection_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\signal\icons8-low-connection-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dark_Documents_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Dark_Documents-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sure_EN" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="new_file_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\new-file-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Password_En" xml:space="preserve">
+    <value>Please enter the password : </value>
+  </data>
+  <data name="Stop_Normal_Red_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Stop-Normal-Red-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeviceStatusErr_CN" xml:space="preserve">
+    <value>裝置錯誤!!</value>
+  </data>
+  <data name="Actions_go_next_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Actions-go-next-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Arrow_Back_icon_64_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\go-back-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Actions_go_down_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Actions-go-down-icon 32-32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadPanelFinish_EN" xml:space="preserve">
+    <value>Load Panel Info Finish.</value>
+  </data>
+  <data name="c_model_64_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\c_model_64-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InvalidFileFormat_EN" xml:space="preserve">
+    <value>Invalid file format.,{0} is invalid!</value>
+  </data>
+  <data name="TPLogo_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\TPLogo_Light.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CRCDiff_CN" xml:space="preserve">
+    <value>裝置與Hex檔案的CRC不符</value>
+  </data>
+  <data name="PenTypeErr_EN" xml:space="preserve">
+    <value>PenType is not mapped!!</value>
+  </data>
+  <data name="File_Open_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\File-Open-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AdditionalFeatureMsg_EN" xml:space="preserve">
+    <value>{0} doesn't exist.</value>
+  </data>
+  <data name="PasswordTip_Cn" xml:space="preserve">
+    <value>您輸入的密碼：{0}</value>
+  </data>
+  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PenTypeErr_CN" xml:space="preserve">
+    <value>手寫筆協議版本不符!!</value>
+  </data>
+  <data name="AdditionalFeatureTitle_CN" xml:space="preserve">
+    <value>附加功能</value>
+  </data>
+  <data name="LH1_Play_icon16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\LH1-Play-icon16-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="industry_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\industry-icon 64-64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wifi_1_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Wifi-1-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chart_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\chart-icon 64-64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Actions_go_previous_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Actions-go-previous-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\cancel-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChannelErr_CN" xml:space="preserve">
+    <value>Channel數量不符!!</value>
+  </data>
+  <data name="Yes_EN" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="hex_to_ili_64_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\hex_to_ili_64-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_Gant_Chart_icon_64_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Document-Gant-Chart-icon-64-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeviceStatusErr_EN" xml:space="preserve">
+    <value>There's something wrong with DeviceStatus!!</value>
+  </data>
+  <data name="Document_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Document-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Graphics_Painting_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Graphics-Painting-icon 64-64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_Preview_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Document-Preview-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateProfile_CN" xml:space="preserve">
+    <value>/n測試參數的配置需要更新/n是否同意更新？/n</value>
+  </data>
+  <data name="functuib_gen_64_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\functuib_gen_64-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="load" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\load.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cleaning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\cleaning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_Chart_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Document-Chart-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PIDErr_EN" xml:space="preserve">
+    <value>PID not mapping!!</value>
+  </data>
+  <data name="ILIlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\ILIlogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ecommerce_Barcode_Scanner_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Ecommerce-Barcode-Scanner-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HoverCircle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\HoverCircle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateProfileWarning_CN" xml:space="preserve">
+    <value>假如所有通道數量一樣，是否要保留原本的整面資料？(Uniformity、MicroOpen)</value>
+  </data>
+  <data name="Cancel_EN" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Ecommerce_Barcode_Scanner_icon128_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Ecommerce-Barcode-Scanner-icon128-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Normal_Home_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Normal-Home-icon 64-64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DevBLMode_EN" xml:space="preserve">
+    <value>Device is BL mode.</value>
+  </data>
+  <data name="Document_Line_Chart_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Document-Line-Chart-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InvalidFileFormat_CN" xml:space="preserve">
+    <value>不正確的檔案格式,{0}是不正確的!</value>
+  </data>
+  <data name="DevBLMode_CN" xml:space="preserve">
+    <value>裝置在BL模式.</value>
+  </data>
+  <data name="MCUErr_EN" xml:space="preserve">
+    <value>MCU is not mapped !!</value>
+  </data>
+  <data name="Arrow_Back_icon_32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Arrow-Back-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Actions_view_refresh_icon_32_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Actions-view-refresh-icon 32-32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ajax_loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\ajax-loader.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_Pressed_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Play-1-Pressed-icon 48-48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadPanelFinish_CN" xml:space="preserve">
+    <value>讀取Panel資訊完成</value>
+  </data>
+  <data name="PasswordErr_En" xml:space="preserve">
+    <value>Incorrect password</value>
+  </data>
+  <data name="Do_Not_Touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Do_Not_Touch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mimetypes_cmd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Mimetypes-cmd-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProtocolErr_EN" xml:space="preserve">
+    <value>Protocol not mapping!!</value>
+  </data>
+  <data name="ProtocolErr_CN" xml:space="preserve">
+    <value>協議版本不符!!</value>
+  </data>
+  <data name="Ecommerce_Barcode_Scanner_icon64_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Ecommerce-Barcode-Scanner-icon64-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="microscope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\microscope-icon 64-64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel_CN" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Pause_Normal_Red_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Pause-Normal-Red-icon 48-48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scrolldowngesture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\scrolldowngesture.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FAIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\FAIL.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disconnect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\disconnect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="page_process_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\page-process-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Small_arrow_up_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Small-arrow-up-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Encryption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Encryption.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LH1_Play_icon128_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\LH1-Play-icon128-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateProfileWarning_EN" xml:space="preserve">
+    <value>If all channels are the same, do you want to keep the adjusted frame data? (Uniformity、MicroOpen)</value>
+  </data>
+  <data name="No_EN" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Documents_icon16_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Documents-icon16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PasswordErr_Cn" xml:space="preserve">
+    <value>密碼輸入錯誤</value>
+  </data>
+  <data name="Actions_tools_wizard_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Actions-tools-wizard-icon 64-64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdateProfile_EN" xml:space="preserve">
+    <value>/nThe specifications of the test items will be updated./nDo you want to update?/n</value>
+  </data>
+  <data name="ChannelErr_EN" xml:space="preserve">
+    <value>Channel size is not mapped !!</value>
+  </data>
+  <data name="Dark_Play_1_Pressed_icon_48_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Dark_Play-1-Pressed-icon 48-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProfileErr_CN" xml:space="preserve">
+    <value>Profile 版本不符!!</value>
+  </data>
+  <data name="Document_Edit_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Document-Edit-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PASS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\PASS.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_signal_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\signal\icons8-signal-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PIDErr_CN" xml:space="preserve">
+    <value>PID 不符!!</value>
+  </data>
+  <data name="MCUErr_CN" xml:space="preserve">
+    <value>MCU版本不符!!</value>
+  </data>
+  <data name="Search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Search-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Actions_go_up_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\Actions-go-up-icon 32-32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AdditionalFeatureMsg_CN" xml:space="preserve">
+    <value>{0} 不存在</value>
+  </data>
+  <data name="gen_ini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture\gen_ini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

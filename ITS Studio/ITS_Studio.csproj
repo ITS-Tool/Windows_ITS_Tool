@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITS_Studio</RootNamespace>
+    <AssemblyName>Windows_Studio_ITS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>TPLogo_Light.ico</ApplicationIcon>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Users\1101700\Desktop\WebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Windows_Studio_ITS/</UpdateUrl>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.11.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C910188443E2B334470824767735DA66DDC8F041</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ITS_Studio_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Internal Release|AnyCPU'">
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;INTERNEL_RELEASE,WANT_DGB</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release Tool|AnyCPU'">
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'StressTestBuild|AnyCPU' ">
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;INTERNEL_RELEASE,STRESS_BUILD,</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Internal Release Lite|AnyCPU'">
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;INTERNEL_RELEASE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release Tool Lite|AnyCPU'">
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseSocket">
+      <HintPath>..\Output\dll\BaseSocket.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CommonDefine">
+      <HintPath>..\Output\dll\CommonDefine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CommonFlow">
+      <HintPath>..\Output\dll\CommonFlow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FuncMethodCmd">
+      <HintPath>..\Output\dll\FuncMethodCmd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GDI_32">
+      <HintPath>..\Output\dll\GDI_32.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ilitek_HID">
+      <HintPath>..\Output\dll\Ilitek_HID.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ITSToolLib">
+      <HintPath>..\Output\dll\ITSToolLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="StreamString">
+      <HintPath>..\Output\dll\StreamString.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SunnyUI">
+      <HintPath>..\Output\dll\SunnyUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SunnyUI.Common">
+      <HintPath>..\Output\dll\SunnyUI.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TeeChart">
+      <HintPath>..\Output\dll\TeeChart.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ThirdPartyTool">
+      <HintPath>..\Output\dll\ThirdPartyTool.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AllForms\CDCTool\CDCGetStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\CDCTool\CDCGetStatistics.Designer.cs">
+      <DependentUpon>CDCGetStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\CDCTool\CDCToolfm_Partial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\C_Model\C_Modelfm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\C_Model\C_Modelfm.designer.cs">
+      <DependentUpon>C_Modelfm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\C_Model\C_Modelfm_Replay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\C_Model\C_Modelfm_Replay.designer.cs">
+      <DependentUpon>C_Modelfm_Replay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\ExtendFlowLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\ExtendFlowLayout.Designer.cs">
+      <DependentUpon>ExtendFlowLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\FixtureHint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\FixtureHint.designer.cs">
+      <DependentUpon>FixtureHint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\fmRawCellSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\fmRawCellSetting.Designer.cs">
+      <DependentUpon>fmRawCellSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\NumberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\NumberForm.Designer.cs">
+      <DependentUpon>NumberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_AutoGen_Thr_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_AutoGen_Thr_Setting.Designer.cs">
+      <DependentUpon>SensorTest_AutoGen_Thr_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_FailCountStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_FailCountStatistics.Designer.cs">
+      <DependentUpon>SensorTest_FailCountStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Main_Partial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_MPResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_MPResult.designer.cs">
+      <DependentUpon>SensorTest_MPResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Pattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Pattern.Designer.cs">
+      <DependentUpon>SensorTest_Pattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_ProfileHideParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_ProfileHideParams.Designer.cs">
+      <DependentUpon>SensorTest_ProfileHideParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Tuning\ChargeCurvefm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Tuning\ChargeCurvefm.Designer.cs">
+      <DependentUpon>ChargeCurvefm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_FPC_Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_FPC_Open.Designer.cs">
+      <DependentUpon>SensorTest_FPC_Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_RawDataSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_RawDataSetting.Designer.cs">
+      <DependentUpon>SensorTest_RawDataSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Tuning\AutoScanChfm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Tuning\AutoScanChfm.designer.cs">
+      <DependentUpon>AutoScanChfm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Tuning\GenProfileFm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Tuning\GenProfileFm.Designer.cs">
+      <DependentUpon>GenProfileFm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Tuning\NoiseFrequencyfm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Tuning\NoiseFrequencyfm.Designer.cs">
+      <DependentUpon>NoiseFrequencyfm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\DebugShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\DebugShow.Designer.cs">
+      <DependentUpon>DebugShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Tuning\NoiseFrequencyFormulafm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Tuning\NoiseFrequencyFormulafm.Designer.cs">
+      <DependentUpon>NoiseFrequencyFormulafm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Tuning\NoiseFrequencyFormulaTransform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Tuning\NoiseFrequencyFormulaTransform.Designer.cs">
+      <DependentUpon>NoiseFrequencyFormulaTransform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\WarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\WarningForm.Designer.cs">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\WifiSettingfm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\WifiSettingfm.Designer.cs">
+      <DependentUpon>WifiSettingfm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FolderSelectDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\RadioListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\DataGridViewProgressCell.cs" />
+    <Compile Include="Component\DataGridViewProgressColumn.cs" />
+    <Compile Include="AllForms\SensorTest\SensorTest_Multi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Multi.Designer.cs">
+      <DependentUpon>SensorTest_Multi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\CDC_Replay.cs" />
+    <Compile Include="Component\CultureManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\Paint_Replay.cs" />
+    <Compile Include="Component\TextProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\FormShowAskDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\FormShowAskDialog.Designer.cs">
+      <DependentUpon>FormShowAskDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_ColorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_ColorView.Designer.cs">
+      <DependentUpon>UserControl_ColorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_LabelTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_LabelTextBox.Designer.cs">
+      <DependentUpon>UserControl_LabelTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_PlayBar_Cmodel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_PlayBar_Cmodel.Designer.cs">
+      <DependentUpon>UserControl_PlayBar_Cmodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_TestStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_TestStatistics.Designer.cs">
+      <DependentUpon>UserControl_TestStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl_TuningCompare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_TuningCompare.Designer.cs">
+      <DependentUpon>UserControl_TuningCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Tuning\TuningComparefm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Tuning\TuningComparefm.Designer.cs">
+      <DependentUpon>TuningComparefm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Painting\fmExternalPaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Painting\fmExternalPaint.Designer.cs">
+      <DependentUpon>fmExternalPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\fmPleaseWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\fmPleaseWait.Designer.cs">
+      <DependentUpon>fmPleaseWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\BridgeSettingfm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\BridgeSettingfm.Designer.cs">
+      <DependentUpon>BridgeSettingfm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\CDCTool\CDCToolfm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\CDCTool\CDCToolfm.Designer.cs">
+      <DependentUpon>CDCToolfm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\ConsoleForm\Consolefm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\ConsoleForm\Consolefm.Designer.cs">
+      <DependentUpon>Consolefm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\FWUpgrade\FirmwareUpgradefm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\FWUpgrade\FirmwareUpgradefm.Designer.cs">
+      <DependentUpon>FirmwareUpgradefm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobeVariable.cs" />
+    <Compile Include="AllForms\MainForm\MainForm_Partial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\MainForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\MainForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\LegalNoticefm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\LegalNoticefm.Designer.cs">
+      <DependentUpon>LegalNoticefm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Painting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Painting.designer.cs">
+      <DependentUpon>SensorTest_Painting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\MainSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\OtherForms\MainSetting.Designer.cs">
+      <DependentUpon>MainSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Painting\Paintfm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Painting\Paintfm.Designer.cs">
+      <DependentUpon>Paintfm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UserControl_PlayBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl_PlayBar.Designer.cs">
+      <DependentUpon>UserControl_PlayBar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllForms\OtherForms\BridgeSettingfm.resx">
+      <DependentUpon>BridgeSettingfm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\CDCTool\CDCGetStatistics.resx">
+      <DependentUpon>CDCGetStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\CDCTool\CDCToolfm.resx">
+      <DependentUpon>CDCToolfm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\C_Model\C_Modelfm.resx">
+      <DependentUpon>C_Modelfm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\C_Model\C_Modelfm_Replay.resx">
+      <DependentUpon>C_Modelfm_Replay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\ExtendFlowLayout.resx">
+      <DependentUpon>ExtendFlowLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\FixtureHint.resx">
+      <DependentUpon>FixtureHint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\fmRawCellSetting.resx">
+      <DependentUpon>fmRawCellSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\NumberForm.resx">
+      <DependentUpon>NumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_AutoGen_Thr_Setting.resx">
+      <DependentUpon>SensorTest_AutoGen_Thr_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_FailCountStatistics.resx">
+      <DependentUpon>SensorTest_FailCountStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_MPResult.resx">
+      <DependentUpon>SensorTest_MPResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_Multi.resx">
+      <DependentUpon>SensorTest_Multi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_Pattern.resx">
+      <DependentUpon>SensorTest_Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_ProfileHideParams.resx">
+      <DependentUpon>SensorTest_ProfileHideParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Tuning\ChargeCurvefm.resx">
+      <DependentUpon>ChargeCurvefm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\ConsoleForm\Consolefm.resx">
+      <DependentUpon>Consolefm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_FPC_Open.resx">
+      <DependentUpon>SensorTest_FPC_Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_RawDataSetting.resx">
+      <DependentUpon>SensorTest_RawDataSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Tuning\GenProfileFm.resx">
+      <DependentUpon>GenProfileFm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Tuning\NoiseFrequencyFormulafm.resx">
+      <DependentUpon>NoiseFrequencyFormulafm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Tuning\NoiseFrequencyFormulaTransform.resx">
+      <DependentUpon>NoiseFrequencyFormulaTransform.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\WifiSettingfm.resx">
+      <DependentUpon>WifiSettingfm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\FormShowAskDialog.resx">
+      <DependentUpon>FormShowAskDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_ColorView.resx">
+      <DependentUpon>UserControl_ColorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_LabelTextBox.resx">
+      <DependentUpon>UserControl_LabelTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_PlayBar_Cmodel.resx">
+      <DependentUpon>UserControl_PlayBar_Cmodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_TuningCompare.resx">
+      <DependentUpon>UserControl_TuningCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Tuning\TuningComparefm.resx">
+      <DependentUpon>TuningComparefm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\FWUpgrade\FirmwareUpgradefm.resx">
+      <DependentUpon>FirmwareUpgradefm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\MainForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\LegalNoticefm.resx">
+      <DependentUpon>LegalNoticefm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Painting\Paintfm.resx">
+      <DependentUpon>Paintfm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Painting\fmExternalPaint.resx">
+      <DependentUpon>fmExternalPaint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\fmPleaseWait.resx">
+      <DependentUpon>fmPleaseWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Tuning\AutoScanChfm.resx">
+      <DependentUpon>AutoScanChfm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Tuning\NoiseFrequencyfm.resx">
+      <DependentUpon>NoiseFrequencyfm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\WarningForm.resx">
+      <DependentUpon>WarningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_TestStatistics.resx">
+      <DependentUpon>UserControl_TestStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_Main.resx">
+      <DependentUpon>SensorTest_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_Painting.resx">
+      <DependentUpon>SensorTest_Painting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_Report.resx">
+      <DependentUpon>SensorTest_Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\SensorTest\SensorTest_Setting.resx">
+      <DependentUpon>SensorTest_Setting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\OtherForms\MainSetting.resx">
+      <DependentUpon>MainSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Tuning\TuningToolfm.resx">
+      <DependentUpon>TuningToolfm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl_PlayBar.resx">
+      <DependentUpon>UserControl_PlayBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\CSharp_PlayBar.UserControl_PlayBar.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Main.Designer.cs">
+      <DependentUpon>SensorTest_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Setting.Designer.cs">
+      <DependentUpon>SensorTest_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\SensorTest\SensorTest_Report.Designer.cs">
+      <DependentUpon>SensorTest_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Tuning\TuningToolfm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Tuning\TuningToolfm.designer.cs">
+      <DependentUpon>TuningToolfm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture\Do_Not_Touch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture\gen_ini.png" />
+    <Content Include="TPLogo_Light.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITS_Studio", "ITS Studio\ITS_Studio.csproj", "{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Normal", "Normal", "{78E13A88-ECB8-450D-9BA8-7DA2D0561E82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1BBC4D4D-78D6-49E3-9449-286D19EAD52C}"
+	ProjectSection(SolutionItems) = preProject
+		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Internal Release Lite|Any CPU = Internal Release Lite|Any CPU
+		Internal Release Lite|Win32 = Internal Release Lite|Win32
+		Internal Release|Any CPU = Internal Release|Any CPU
+		Internal Release|Win32 = Internal Release|Win32
+		Release Tool Lite|Any CPU = Release Tool Lite|Any CPU
+		Release Tool Lite|Win32 = Release Tool Lite|Win32
+		Release Tool|Any CPU = Release Tool|Any CPU
+		Release Tool|Win32 = Release Tool|Win32
+		StressTestBuild|Any CPU = StressTestBuild|Any CPU
+		StressTestBuild|Win32 = StressTestBuild|Win32
+		StressTestBuildLite|Any CPU = StressTestBuildLite|Any CPU
+		StressTestBuildLite|Win32 = StressTestBuildLite|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Internal Release Lite|Any CPU.ActiveCfg = Internal Release Lite|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Internal Release Lite|Win32.ActiveCfg = Internal Release Lite|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Internal Release|Any CPU.ActiveCfg = Internal Release|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Internal Release|Any CPU.Build.0 = Internal Release|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Internal Release|Win32.ActiveCfg = Internal Release|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Internal Release|Win32.Build.0 = Internal Release|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Release Tool Lite|Any CPU.ActiveCfg = Release Tool Lite|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Release Tool Lite|Win32.ActiveCfg = Release Tool Lite|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Release Tool|Any CPU.ActiveCfg = Release Tool|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Release Tool|Any CPU.Build.0 = Release Tool|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Release Tool|Win32.ActiveCfg = Release Tool|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.Release Tool|Win32.Build.0 = Release Tool|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.StressTestBuild|Any CPU.ActiveCfg = StressTestBuild|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.StressTestBuild|Any CPU.Build.0 = StressTestBuild|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.StressTestBuild|Win32.ActiveCfg = StressTestBuild|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.StressTestBuildLite|Any CPU.ActiveCfg = StressTestBuild|Any CPU
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B}.StressTestBuildLite|Win32.ActiveCfg = StressTestBuild|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE68A50B-4B4E-41FC-9363-3B4F08344A4B} = {78E13A88-ECB8-450D-9BA8-7DA2D0561E82}
+	EndGlobalSection
+EndGlobal
