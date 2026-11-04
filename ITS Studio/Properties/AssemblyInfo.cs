@@ -34,7 +34,7 @@ using System.Runtime.InteropServices;
 //express: ("cumstom_tag_high, cumstom_tag_low, cumstom_ver_high, cumstom_version_low")
 //cumstom_tag: 使用10進制ascii表示客戶代碼
 //custom_version:
-//ex:AUO(00) versoin V0.1 :{48.48.0.1}.
+//ex:AUO(00) version V0.1 :{48.48.0.1}.
 //cumstom tag list:
 //AUO(00) <=={48.48. x. x}.
 //default version <== {0,0,0,0}

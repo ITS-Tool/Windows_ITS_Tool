@@ -79,7 +79,7 @@ namespace ITS_Studio.AllForms.SensorTest
                     if (StaticVar.g_Lang != enLangTable.LANG_ENGLISH)
                         ErrorMessage = "V3 IC不支援讀取MP Result\n";
                     else
-                        ErrorMessage = "V3 IC is not suppot read MP Result\n";
+                        ErrorMessage = "V3 IC is not support read MP Result\n";
 
                     this.DialogResult = DialogResult.Abort;
                     this.Close();

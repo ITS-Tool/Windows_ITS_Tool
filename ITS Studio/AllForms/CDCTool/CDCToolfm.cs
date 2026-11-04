@@ -308,7 +308,7 @@ namespace ITS_Studio.AllForms
 
         private void tabPage_Short_ResetChart()
         {
-            // Selet 2D
+            // Select 2D
             bTeeChartVisible[(int)enTeeChart.in2D] = true;
             m_splitTChat.Panel1Collapsed = false;
             m_splitTChat.Panel1.Show();
@@ -1909,7 +1909,7 @@ namespace ITS_Studio.AllForms
         {
             if(StripCB_Diagram.SelectedIndex == 0)
             {
-                // Selet 2D
+                // Select 2D
                 bTeeChartVisible[(int)enTeeChart.in2D] = true;
                 m_splitTChat.Panel1Collapsed = false;
                 m_splitTChat.Panel1.Show();
@@ -1921,7 +1921,7 @@ namespace ITS_Studio.AllForms
             }
             if(StripCB_Diagram.SelectedIndex == 1)
             {
-                // Selet 3D
+                // Select 3D
                 bTeeChartVisible[(int)enTeeChart.in2D] = false;
                 m_splitTChat.Panel1Collapsed = true;
                 m_splitTChat.Panel1.Hide();
@@ -1933,7 +1933,7 @@ namespace ITS_Studio.AllForms
             }
             if(StripCB_Diagram.SelectedIndex == 2)
             {
-                // Selet 2D + 3D
+                // Select 2D + 3D
                 bTeeChartVisible[(int)enTeeChart.in2D] = true;
                 m_splitTChat.Panel1Collapsed = false;
                 m_splitTChat.Panel1.Show();

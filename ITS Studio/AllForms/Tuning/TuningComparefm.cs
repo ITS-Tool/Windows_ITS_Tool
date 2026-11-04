@@ -1444,7 +1444,7 @@ Find_End:
                 MessageBox.Show(string.Format("Not found {0}", tb_find_string.Text), "",
                        MessageBoxButtons.OK, MessageBoxIcon.Information);
             else if(rowIndex == -2)
-                MessageBox.Show(string.Format("{0} is in anthor mode.", tb_find_string.Text), "",
+                MessageBox.Show(string.Format("{0} is in another mode.", tb_find_string.Text), "",
                        MessageBoxButtons.OK, MessageBoxIcon.Information);
 #endif
 

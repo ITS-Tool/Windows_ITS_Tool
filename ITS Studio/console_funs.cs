@@ -76,7 +76,7 @@ namespace ITS_Console
         [Description("Description for Executing set the tuning mode failed\r\n")]
         ITS_ERR_DO_SET_TUNING_MODE_NG = 0x00008007,
 
-        [Description("Description for Parseing the cdc cmd failed\r\n")]
+        [Description("Description for Parsing the cdc cmd failed\r\n")]
         ITS_ERR_PARSE_CDC_CMD_NG = 0x00008008,
 
         [Description("Description for Doing the cdc cmd failed\r\n")]
@@ -118,7 +118,7 @@ namespace ITS_Console
         [Description("Description for upgrading fw failed\r\n")]
         ITS_ERR_UPGRADE_FW_NG = 0x00008015,
 
-        [Description("Description for Parseing the cdc chart type failed\r\n")]
+        [Description("Description for Parsing the cdc chart type failed\r\n")]
         ITS_ERR_PARSE_CDC_CHARTTYPE_NG = 0x00008016,
 
         [Description("Description for Others failed\r\n")]
@@ -785,23 +785,23 @@ namespace ITS_Console
 
                 StaticVar.LogWrite("\r\nStart to scan noise frequency...\r\n");
                 if (m_var.Var_Multi.ProtocolType == enPROTOCOL.V3)
-                StaticVar.LogWrite("Noise Frequency Sine Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimun Signal Level:  {3}\r\n\r\n", m_var.NoiseFrqVar.Sine._params.iStart, m_var.NoiseFrqVar.Sine._params.iEnd, (double)(m_var.NoiseFrqVar.Sine._params.iStep/10.0), m_var.NoiseFrqVar.Sine._params.iMinSignal);
+                StaticVar.LogWrite("Noise Frequency Sine Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimum Signal Level:  {3}\r\n\r\n", m_var.NoiseFrqVar.Sine._params.iStart, m_var.NoiseFrqVar.Sine._params.iEnd, (double)(m_var.NoiseFrqVar.Sine._params.iStep/10.0), m_var.NoiseFrqVar.Sine._params.iMinSignal);
                 else
-                    StaticVar.LogWrite("Noise Frequency Sine Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimun Signal Level:  {3}\r\n\r\n", m_var.NoiseFrqVar.Sine._params.iStart, m_var.NoiseFrqVar.Sine._params.iEnd, m_var.NoiseFrqVar.Sine._params.iStep, m_var.NoiseFrqVar.Sine._params.iMinSignal);
+                    StaticVar.LogWrite("Noise Frequency Sine Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimum Signal Level:  {3}\r\n\r\n", m_var.NoiseFrqVar.Sine._params.iStart, m_var.NoiseFrqVar.Sine._params.iEnd, m_var.NoiseFrqVar.Sine._params.iStep, m_var.NoiseFrqVar.Sine._params.iMinSignal);
 
 
                 if (m_var.Var_Multi.ProtocolType == enPROTOCOL.V6)
                 {
-                    StaticVar.LogWrite("Noise Frequency SWCap Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimun Signal Level:  {3}\r\n\r\n", m_var.NoiseFrqVar.SWCap._params.iStart, m_var.NoiseFrqVar.SWCap._params.iEnd, m_var.NoiseFrqVar.SWCap._params.iStep, m_var.NoiseFrqVar.SWCap._params.iMinSignal);
+                    StaticVar.LogWrite("Noise Frequency SWCap Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimum Signal Level:  {3}\r\n\r\n", m_var.NoiseFrqVar.SWCap._params.iStart, m_var.NoiseFrqVar.SWCap._params.iEnd, m_var.NoiseFrqVar.SWCap._params.iStep, m_var.NoiseFrqVar.SWCap._params.iMinSignal);
 
-                    StaticVar.LogWrite("Noise Frequency Self Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimun Signal Level:  {3}\r\n\r\n", m_var.NoiseFrqVar.Self._params.iStart, m_var.NoiseFrqVar.Self._params.iEnd, m_var.NoiseFrqVar.Self._params.iStep, m_var.NoiseFrqVar.Self._params.iMinSignal);
+                    StaticVar.LogWrite("Noise Frequency Self Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimum Signal Level:  {3}\r\n\r\n", m_var.NoiseFrqVar.Self._params.iStart, m_var.NoiseFrqVar.Self._params.iEnd, m_var.NoiseFrqVar.Self._params.iStep, m_var.NoiseFrqVar.Self._params.iMinSignal);
 
                     if (Enum.IsDefined(typeof(V6_29XX_MCU), m_var.Var_Multi.DevPanelInfo.MCU))
                     {
                         m_gc._NoiseFrq_.isForPenTest = true;
                         if (bPenSetting)
                         {
-                            StaticVar.LogWrite("Noise Frequency Pen Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimun Signal Level:  {3}\r\n", m_var.NoiseFrqVar.Pen._params.iStart, m_var.NoiseFrqVar.Pen._params.iEnd, m_var.NoiseFrqVar.Pen._params.iStep, m_var.NoiseFrqVar.Pen._params.iMinSignal);
+                            StaticVar.LogWrite("Noise Frequency Pen Setting:\r\n   Range: {0}~{1} KHz\r\n   Step:  {2} KHz\r\n   Minimum Signal Level:  {3}\r\n", m_var.NoiseFrqVar.Pen._params.iStart, m_var.NoiseFrqVar.Pen._params.iEnd, m_var.NoiseFrqVar.Pen._params.iStep, m_var.NoiseFrqVar.Pen._params.iMinSignal);
                             StaticVar.LogWrite("   Threshold level:Range    Value\r\n");
                             foreach (var i in m_var.NoiseFrqVar.Pen._params.ls_PenSignal)
                                 StaticVar.LogWrite("                   {0}      {1}\r\n", i.sFreq, i.sValue);
