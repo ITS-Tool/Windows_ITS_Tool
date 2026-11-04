@@ -15,7 +15,7 @@ namespace ITS_Studio.AllForms.SensorTest
             if (m_autogen.GetCurrect_LogToolThr(profile) == false)
             {
                 UIPage MyUIPage = new UIPage();
-                MyUIPage.ShowErrorDialog("Error", string.Format("{0} cann't be found\r\n", CommonExt.ITS_Directory.AnalyzerSetting_path), UIStyle.Red, true);
+                MyUIPage.ShowErrorDialog("Error", string.Format("{0} can't be found\r\n", CommonExt.ITS_Directory.AnalyzerSetting_path), UIStyle.Red, true);
                 file_exist = false;
             }
             else

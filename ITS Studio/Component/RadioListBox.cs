@@ -86,11 +86,11 @@ namespace ThirdPartyComponent
             this.Align = new StringFormat(StringFormat.GenericDefault);
             this.Align.LineAlignment = StringAlignment.Center;
 
-            // Force transparent analisys
+            // Force transparent analysis
             this.BackColor = this.BackColor;
         }
 
-        // Main paiting method
+        // Main painting method
         protected override void OnDrawItem(DrawItemEventArgs e)
         {
             int maxItem = this.Items.Count - 1;

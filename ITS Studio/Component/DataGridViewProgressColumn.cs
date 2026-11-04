@@ -58,24 +58,24 @@ namespace ThirdPartyComponent
         ///// <summary>
         ///// ProgressBar最小値
         ///// </summary>
-        //public int Mimimum
+        //public int Minimum
         //{
         //    get
         //    {
-        //        return ((DataGridViewProgressBarCell)this.CellTemplate).Mimimum;
+        //        return ((DataGridViewProgressBarCell)this.CellTemplate).Minimum;
         //    }
         //    set
         //    {
-        //        if (this.Mimimum == value)
+        //        if (this.Minimum == value)
         //            return;
-        //        ((DataGridViewProgressBarCell)this.CellTemplate).Mimimum = value;
+        //        ((DataGridViewProgressBarCell)this.CellTemplate).Minimum = value;
         //        if (this.DataGridView == null)
         //            return;
         //        int rowCount = this.DataGridView.RowCount;
         //        for (int i = 0; i < rowCount; i++)
         //        {
         //            DataGridViewRow r = this.DataGridView.Rows.SharedRow(i);
-        //            ((DataGridViewProgressBarCell)r.Cells[this.Index]).Mimimum = value;
+        //            ((DataGridViewProgressBarCell)r.Cells[this.Index]).Minimum = value;
         //        }
         //    }
         //}

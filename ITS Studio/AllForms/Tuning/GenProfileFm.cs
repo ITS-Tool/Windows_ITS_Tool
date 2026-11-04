@@ -418,7 +418,7 @@ namespace ITS_Studio.AllForms.Tuning
             return total;
         }
         ////將取得蒐集log時所使用的profile的內容拿來判斷CSV檔是否為pass
-        ////@retrun bool: true:pass false:fail
+        ////@return bool: true:pass false:fail
         //public bool judgy_collection_log(string log, string ictype, int xch, int ych, int short_thr, int open_thr, List<MultiSenTest_VAR._RawGolden_> uni_thr, Int32[] crc, bool fw_verify)
         //{
         //    bool ret = true;

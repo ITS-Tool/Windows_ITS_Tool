@@ -337,7 +337,7 @@
             this.cbBox_ToolPath.Style = Sunny.UI.UIStyle.Orange;
             this.cbBox_ToolPath.TabIndex = 38;
             this.cbBox_ToolPath.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cbBox_ToolPath.Watermark = "Deamon Tool Path";
+            this.cbBox_ToolPath.Watermark = "Daemon Tool Path";
             this.cbBox_ToolPath.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.cbBox_ToolPath.SelectedIndexChanged += new System.EventHandler(this.cbBox_ToolPath_SelectedIndexChanged);
             // 

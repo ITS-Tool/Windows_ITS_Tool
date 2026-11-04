@@ -2434,7 +2434,7 @@ namespace ITS_Studio.AllForms
             }
         }
 
-        // Show location Time in TP Tool Status Script Lablel
+        // Show location Time in TP Tool Status Script Label
         private void TimerClock_Tick(object sender, EventArgs e)
         {
             int Ima = 0;
